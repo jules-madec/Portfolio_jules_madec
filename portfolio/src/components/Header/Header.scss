@@ -1,0 +1,165 @@
+@use '../../styles/abstracts' as *;
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: 16vh;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    backdrop-filter: blur(11px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+/* ================= */
+/* LOGO */
+/* ================= */
+
+#header__logo {
+    display: flex;
+    align-items: center;
+
+    img {
+        height: 28px;
+        width: auto;
+    }
+}
+
+/* ================= */
+/* NAVIGATION */
+/* ================= */
+
+#header__nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 35px;
+
+    a {
+        text-decoration: none;
+        cursor: none;
+        position: relative;
+        overflow: hidden;
+        transition: color 0.4s ease;
+        letter-spacing: 1px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: $blue-dark;
+            border-radius: 2px;
+            transition: left 0.5s ease;
+        }
+
+        &:hover::before {
+            left: 0;
+        }
+
+        h3 {
+            font-size: 22px;
+            color: $blue-dark;
+        }
+    }
+}
+
+/* ================= */
+/* BOUTON CV */
+/* ================= */
+
+#header__cta {
+    background-color: $blue-dark;
+    width: 110px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+
+    h3 {
+        color: white !important;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+
+    &::before {
+        display: none;
+    }
+}
+
+/* ================= */
+/* BURGER MENU */
+/* ================= */
+
+#header__burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 26px;
+    height: 18px;
+    cursor: none;
+    z-index: 10000;
+
+    span {
+        width: 100%;
+        height: 3px;
+        background: $blue-dark;
+        border-radius: 2px;
+        transition: 0.3s;
+    }
+}
+
+/* ANIMATION BURGER */
+
+#header__burger.header__burger--active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#header__burger.header__burger--active span:nth-child(2) {
+    opacity: 0;
+}
+
+#header__burger.header__burger--active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ================= */
+/* MOBILE */
+/* ================= */
+
+@media (max-width: 768px) {
+    #header {
+        height: 10vh;
+    }
+
+    #header__burger {
+        display: flex;
+    }
+
+    #header__nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 70%;
+        background: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 45px;
+        transition: 0.4s ease;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+    }
+
+    #header__nav.header__nav--active {
+        right: 0;
+    }
+}

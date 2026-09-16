@@ -1,0 +1,222 @@
+@use '../../styles/abstracts' as *;
+
+#contact {
+    height: 100vh;
+    width: 99vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15%;
+    margin-top: 5%;
+}
+
+#contact__box {
+    height: 80%;
+    width: 75%;
+    background-color: $white-soft;
+    box-shadow: $shadow-soft;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#contact__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    h3 {
+        font-size: 45px;
+        color: $blue-dark;
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        background-color: $blue-dark;
+        height: 5%;
+        width: 50%;
+        position: absolute;
+        border-radius: 22px;
+    }
+
+    &::before {
+        left: -85%;
+    }
+
+    &::after {
+        right: -85%;
+    }
+}
+
+#contact__body {
+    height: 80%;
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contact__qr {
+    height: 70%;
+    width: 40%;
+    background-color: $blue-dark;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+#contact__links {
+    height: 80%;
+    width: 44%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    a {
+        height: 17%;
+        width: 95%;
+        border: 4px solid $blue-dark;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-decoration: none;
+        position: relative;
+        background: transparent;
+        overflow: hidden;
+        transition: color 0.6s ease;
+        letter-spacing: 1px;
+        z-index: 1;
+
+        &:hover {
+            h3 {
+                color: $white-soft;
+            }
+
+            img {
+                filter: invert(1);
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: $blue-dark;
+            z-index: -1;
+            transition: left 0.6s ease;
+        }
+
+        &:hover::before {
+            left: 0;
+        }
+
+        h3 {
+            color: black;
+            font-size: 25px;
+        }
+
+        img {
+            height: 30px;
+            width: 30px;
+        }
+    }
+}
+
+#contact__divider {
+    height: 70%;
+    width: 1%;
+    background-color: $blue-dark;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    #contact {
+        height: auto;
+        width: 100vw;
+        padding-bottom: 40px;
+        margin-top: 8%;
+    }
+
+    #contact__box {
+        width: 92%;
+        height: auto;
+        padding: 30px 0;
+        gap: 24px;
+    }
+
+    #contact__title {
+        h3 {
+            font-size: 34px;
+        }
+
+        &::before {
+            width: 30%;
+            left: -60%;
+        }
+
+        &::after {
+            width: 30%;
+            right: -60%;
+        }
+    }
+
+    #contact__body {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    #contact__divider {
+        height: 2px;
+        width: 80%;
+    }
+
+    #contact__qr {
+        width: 75%;
+        height: auto;
+        padding: 24px 0;
+        border-radius: 22px;
+
+        img {
+            height: 180px;
+            width: 180px;
+        }
+    }
+
+    #contact__links {
+        width: 90%;
+        height: auto;
+        gap: 14px;
+
+        a {
+            height: 56px;
+            width: 100%;
+            border-width: 3px;
+
+            h3 {
+                font-size: 18px;
+            }
+
+            img {
+                height: 24px;
+                width: 24px;
+            }
+        }
+    }
+}

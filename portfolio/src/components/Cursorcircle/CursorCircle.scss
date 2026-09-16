@@ -1,0 +1,20 @@
+@use '../../styles/abstracts' as *;
+
+.cursor__circle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: $blue-dark;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .cursor__circle {
+        display: none;
+    }
+}

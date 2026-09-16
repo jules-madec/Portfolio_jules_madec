@@ -1,0 +1,22 @@
+@use '../abstracts' as *;
+
+html,
+body {
+  cursor: none;
+}
+
+body {
+  background-color: $white;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
