@@ -21,11 +21,11 @@ function Contact() {
                             <img src={`${import.meta.env.BASE_URL}assets/img/linkedin-icon.webp`} alt="" />
                             <h3>Linkedin</h3>
                         </a>
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=julesmadec@email.com," target="_blank" rel="noreferrer">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jules.madec@lamanu-student.fr," target="_blank" rel="noreferrer">
                             <img src={`${import.meta.env.BASE_URL}assets/img/gmail.svg`} alt="" />
                             <h3>Gmail</h3>
                         </a>
-                        <a href="mailto:julomadec@gmail.com" target="_blank" rel="noreferrer">
+                        <a href="mailto:jules.madec@lamanu-student.fr" target="_blank" rel="noreferrer">
                             <img src={`${import.meta.env.BASE_URL}assets/img/email-icon.png`} alt="" />
                             <h3>Email</h3>
                         </a>

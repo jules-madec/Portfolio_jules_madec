@@ -12,7 +12,7 @@ function Footer() {
 
                 <div className="footer__col">
                     <h4>Contact</h4>
-                    <a href="mailto:julomadec@gmail.com">julomadec@gmail.com</a>
+                    <a href="mailto:jules.madec@lamanu-student.fr">jules.madec@lamanu-student.fr</a>
                     <span>Compiègne, France</span>
                     <a href={`${import.meta.env.BASE_URL}assets/docs/CV_jules_madec.pdf`} target="_blank" rel="noreferrer">
                         Télécharger mon CV
