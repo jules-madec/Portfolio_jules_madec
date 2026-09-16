@@ -14,7 +14,7 @@ function Footer() {
                     <h4>Contact</h4>
                     <a href="mailto:julomadec@gmail.com">julomadec@gmail.com</a>
                     <span>Compiègne, France</span>
-                    <a href={`${import.meta.env.BASE_URL}assets/docs/CV_jules_madec_compressed.pdf`} target="_blank" rel="noreferrer">
+                    <a href={`${import.meta.env.BASE_URL}assets/docs/CV_jules_madec.pdf`} target="_blank" rel="noreferrer">
                         Télécharger mon CV
                     </a>
                 </div>

@@ -30,7 +30,7 @@ function Home() {
                 </div>
                 <div id="home__text">
                     <p>
-                        Je m'appelle <strong>Jules Madec</strong>, j&rsquo;ai 19 ans et je suis en 2ᵉ année de Bachelor Chef de
+                        Je m'appelle <strong>Jules Madec</strong>, j&rsquo;ai 19 ans et je suis en 3ᵉ année de Bachelor Chef de
                         Projet Développement &amp; IA à LA MANU (Compiègne).
                         <span>
                             Passionné par le développement web et l&rsquo;innovation, je développe des projets modernes et

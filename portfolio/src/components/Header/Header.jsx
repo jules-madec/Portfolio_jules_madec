@@ -38,7 +38,7 @@ function Header() {
                         <h3>Contact</h3>
                     </a>
 
-                    <a id="header__cta" href={`${import.meta.env.BASE_URL}assets/docs/CV_jules_madec_compressed.pdf`} target="_blank" rel="noreferrer" onClick={closeNav}>
+                    <a id="header__cta" href={`${import.meta.env.BASE_URL}assets/docs/CV_jules_madec.pdf`} target="_blank" rel="noreferrer" onClick={closeNav}>
                         <h3>Mon CV</h3>
                     </a>
                 </div>
