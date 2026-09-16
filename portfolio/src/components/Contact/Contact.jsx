@@ -9,7 +9,7 @@ function Contact() {
                 </div>
                 <div id="contact__body">
                     <div id="contact__qr">
-                        <img src={`${import.meta.env.BASE_URL}assets/img/qr-code.svg`} alt="QR code de contact" />
+                        <img src={`${import.meta.env.BASE_URL}assets/img/qrcode_jules.svg`} alt="QR code de contact" />
                     </div>
                     <div id="contact__divider"></div>
                     <div id="contact__links">
