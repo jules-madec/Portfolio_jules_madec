@@ -58,7 +58,7 @@ const highlightProjects = [
         description:
             'Mon portfolio personnel, développé avec React et Vite, pour présenter mes projets et mes compétences.',
         tags: ['React', 'Vite', 'JavaScript', 'Sass'],
-        link: 'https://github.com/jules-madec',
+        link: 'https://github.com/jules-madec/Portfolio_jules_madec',
         linkText: 'Voir sur GitHub',
     },
     {
