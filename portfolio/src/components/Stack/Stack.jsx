@@ -52,7 +52,7 @@ function Stack() {
                 {iconGroups.map((icons, groupIndex) => (
                     <div key={groupIndex}>
                         {icons.map((icon) => (
-                            <img key={icon} src={`/assets/img/${icon}`} alt="" />
+                            <img key={icon} src={`${import.meta.env.BASE_URL}assets/img/${icon}`} alt="" />
                         ))}
                     </div>
                 ))}

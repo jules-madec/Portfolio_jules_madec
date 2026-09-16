@@ -48,7 +48,7 @@ function Home() {
                 <div id="home__card--white-2"></div>
                 <div id="home__card--blue">
                     <div id="home__card-photo">
-                        <img src="/assets/img/profile-photo.png" alt="ma tete" />
+                        <img src={`${import.meta.env.BASE_URL}assets/img/profile-photo.png`} alt="Photo de Jules Madec" />
                     </div>
                 </div>
             </div>

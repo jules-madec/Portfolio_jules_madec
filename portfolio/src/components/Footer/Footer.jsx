@@ -6,7 +6,7 @@ function Footer() {
             <div className="footer__inner">
                 <div className="footer__logo">
                     <a href="#home">
-                        <img src="/assets/img/logo.svg" alt="logo Jules Madec" />
+                        <img src={`${import.meta.env.BASE_URL}assets/img/logo.svg`} alt="logo Jules Madec" />
                     </a>
                 </div>
 
@@ -14,7 +14,7 @@ function Footer() {
                     <h4>Contact</h4>
                     <a href="mailto:julomadec@gmail.com">julomadec@gmail.com</a>
                     <span>Compiègne, France</span>
-                    <a href="/assets/docs/CV_jules_madec_compressed.pdf" target="_blank" rel="noreferrer">
+                    <a href={`${import.meta.env.BASE_URL}assets/docs/CV_jules_madec_compressed.pdf`} target="_blank" rel="noreferrer">
                         Télécharger mon CV
                     </a>
                 </div>
@@ -33,8 +33,8 @@ function Footer() {
             <div className="footer__bottom">
                 <p>© 2026 Jules Madec — Tous droits réservés</p>
                 <div className="footer__links">
-                    <a href="/politique.html">Mentions légales</a>
-                    <a href="/politique.html">Politique de confidentialité</a>
+                    <a href={`${import.meta.env.BASE_URL}politique.html`}>Mentions légales</a>
+                    <a href={`${import.meta.env.BASE_URL}politique.html`}>Politique de confidentialité</a>
                 </div>
             </div>
         </footer>
