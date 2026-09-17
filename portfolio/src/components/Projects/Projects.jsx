@@ -39,7 +39,7 @@ const highlightProjects = [
         title: 'Tricount',
         description:
             "Application de partage de frais dédiée à des projets écologiques, pour suivre et répartir facilement les dépenses d'un groupe.",
-        tags: ['React', 'JavaScript', 'Bootstrap'],
+        tags: ['Symfony', 'JavaScript', 'Bootstrap'],
         link: 'https://github.com/Boursier-Enzo/Projet-Tricount',
         linkText: 'Voir sur GitHub',
     },
